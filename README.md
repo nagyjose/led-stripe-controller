@@ -66,7 +66,17 @@ The controller incorporates an ideal diode circuit on the Pico W power rail:
 
 ---
 
-## 3. Hardware Specifications
+## 3. Hardware Schematic & PCB Design
+
+Below is the complete engineering schematic of the LED Stripe Controller (v3) designed in Autodesk Eagle:
+
+![LED Stripe Controller v3 Schematic](docs/images/schematic.png)
+
+📄 [Open original vector schematic in full resolution (PDF)](LED-controller-3.pdf)
+
+---
+
+## 4. Hardware Specifications
 
 | Parameter | Specification | Notes |
 | :--- | :--- | :--- |
@@ -84,7 +94,7 @@ The controller incorporates an ideal diode circuit on the Pico W power rail:
 
 ---
 
-## 4. Pinout & Connections
+## 5. Pinout & Connections
 
 ### Output Header (`JUM1` - S1G4)
 | Pin # | Net Name | Function | Destination |
@@ -109,7 +119,7 @@ The controller incorporates an ideal diode circuit on the Pico W power rail:
 
 ---
 
-## 5. Repository Structure
+## 6. Repository Structure
 
 ```text
 .
@@ -119,6 +129,9 @@ The controller incorporates an ideal diode circuit on the Pico W power rail:
 ├── LED-controller-3.brd            # 2-layer PCB layout (Autodesk Eagle XML format)
 ├── LED-controller-3.pdf            # Schematic & layout print export
 ├── LED-controller-3_2025-12-26.zip # Manufacturing CAM package (Gerber & Drill files)
+├── docs/
+│   └── images/
+│       └── schematic.png           # High-resolution schematic preview
 └── eagle.epf                       # Autodesk Eagle project configuration
 ```
 
@@ -129,7 +142,7 @@ The controller incorporates an ideal diode circuit on the Pico W power rail:
 
 ---
 
-## 6. Firmware & Software Integration
+## 7. Firmware & Software Integration
 
 The hardware is compatible with MicroPython, CircuitPython, and C/C++ (Pico SDK).
 
@@ -177,7 +190,7 @@ except KeyboardInterrupt:
 
 ---
 
-## 7. Hardware Revision History
+## 8. Hardware Revision History
 
 ```mermaid
 flowchart LR
