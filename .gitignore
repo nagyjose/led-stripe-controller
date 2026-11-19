@@ -1,0 +1,12 @@
+# Autodesk Eagle backup and temporary files
+*.s#*
+*.b#*
+*.l#*
+*.pro
+*~
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
